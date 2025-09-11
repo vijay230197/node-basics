@@ -4,7 +4,9 @@ const PORT = 3000;
 
 // Middleware (optional)
 app.use(express.json());
+const routes = require('./routes/index');
 
+app.use(routes);
 // Basic route
 app.get("/", (req, res) => {
     res.send("Hello from Express server 🚀");
