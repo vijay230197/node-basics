@@ -1,16 +1,16 @@
-// const obj = {
-//     name: 'vijay',
-//     address: {
-//         location: 'vadodara',
-//         id: 1
-//     }
-// }
+const obj = {
+    name: 'vijay',
+    address: {
+        location: 'vadodara',
+        id: 1
+    }
+}
 
-// const newCopy = { ...obj };
+const newCopy = { ...obj };
 
-// newCopy.name = 'soam'
-// newCopy.address.location = 'mumbai'
-// newCopy.address.id = 2
+newCopy.name = 'soam'
+newCopy.address.location = 'mumbai'
+newCopy.address.id = 2
 
 
 // // const newCopyCopy = obj;
@@ -18,9 +18,9 @@
 // //     newCopyCopy.address.location = 'mumbai'
 // // newCopyCopy.address.id = 2
 
-// console.log(obj);
-// console.log(newCopy);
-// // console.log(newCopyCopy);
+console.log(obj);
+console.log(newCopy);
+// console.log(newCopyCopy);
 
 
 // Objects in JavaScript live in the heap.

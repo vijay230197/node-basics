@@ -1,0 +1,23 @@
+JS is a single threaded synchronuos language
+Event loop has a behavious of non blocking, asynchronous despite being single threaded.
+This allows JS to run I/O operations, timers, vents etc
+
+
+Call Stack: Where function calls are executed (LIFO - Last In, First Out)
+
+Web APIs: Browser-provided APIs (setTimeout, DOM events, HTTP requests)
+
+Callback Queue (Task Queue): Holds callbacks waiting to be executed
+
+Microtask Queue: For promises and mutation observers (higher priority)
+
+Event Loop: The coordinator that manages everything
+
+
+JS has a runtime nvironment
+
+
+Nodejs is a open source JS run time environment
+Nodejs can run js outside browser with libuv
+
+In terms of node libuv library is used to manage I/O operations.

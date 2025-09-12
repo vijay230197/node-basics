@@ -1,0 +1,4 @@
+Disadvantages of closures
+
+1. Overconsumption of memory if not careful
+2. Memory leaks

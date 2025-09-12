@@ -1,0 +1,14 @@
+Mutations and reassignment of non primitive data Types
+
+const obj ={                                                const obj = {
+
+    name: 'abc'                                                 name = 'abc'
+}                                                           }
+
+function change(obj)                                       function change(obj)
+    obj.name = 'def'                                            obj = { name: 'def' }
+
+
+change(obj);                                                change(obj)
+
+//mutations will affect original obj too                    //reassignment doest affect original obj
