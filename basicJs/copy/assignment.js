@@ -21,18 +21,22 @@
 // b.name = 'soam';
 // b.details.city = 'mumbai';
 
-// console.log(a, b);
-
+// console.log(a);
+// console.log(b);
 //let b = a; → same reference (no copy at all).
 
 
 
 //3.
 
-// const obj = { a:1 };
+// const obj = {
+//     a: 1
+// };
 // const copy = obj;
+
 // copy.a = 2;
+
 // console.log(obj.a);
-// Output:
+//Output:
 
 // 2

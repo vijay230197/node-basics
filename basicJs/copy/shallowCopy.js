@@ -6,8 +6,6 @@
 //     }
 // }
 
-
-
 // const newCopy = { ...obj };
 
 // newCopy.name = 'soam'
@@ -15,8 +13,30 @@
 // newCopy.address.id = 2
 
 
+// // const newCopyCopy = obj;
+// // newCopyCopy.name = 'soam',
+// //     newCopyCopy.address.location = 'mumbai'
+// // newCopyCopy.address.id = 2
+
 // console.log(obj);
 // console.log(newCopy);
+// // console.log(newCopyCopy);
+
+
+// Objects in JavaScript live in the heap.
+// A variable (like obj) holds a reference (pointer) to that heap object.
+
+//Shallow copy creates a new object in the heap.
+// First-level properties (name, address) are copied:
+// name is a primitive (string), so it’s copied by value.
+// address is an object, so its reference is copied.
+
+
+
+// newCopyCopy you’re not creating a copy.
+// You’re just creating a new variable (newCopyCopy) that points to the same reference as obj.
+
+
 
 //name is primitive + its not nested property so doesnt affect the name in shallow copy
 //address is non primitve + its nested property id and location both affected the original copy and new copy
