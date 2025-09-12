@@ -1,0 +1,2 @@
+Arrow functions don’t have their own this.
+They inherit this from the scope where they were defined.

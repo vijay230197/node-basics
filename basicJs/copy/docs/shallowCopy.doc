@@ -1,0 +1,8 @@
+shallow copy creates new object/array
+only copies first level properties Nested objects still share the same reference on the heap.
+
+if property is primitive, value is copied
+primitives are immutable
+
+
+if not, referrence of value is copied.

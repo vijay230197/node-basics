@@ -1,0 +1,24 @@
+Primitive vs Reference Types
+
+Primitives: string, number, boolean, null, undefined, symbol, bigint
+
+Stored directly on the stack.
+
+Assignment creates a copy of the value.
+
+let a = 5;
+let b = a; // b gets a copy
+b = 10;
+console.log(a); // 5
+
+
+Objects / Arrays / Functions: stored on the heap
+
+Variables hold a reference to the heap object.
+
+Assignment copies the reference, not the object itself.
+
+const obj1 = { x: 1 };
+const obj2 = obj1; // both point to the same object
+obj2.x = 2;
+console.log(obj1.x);
