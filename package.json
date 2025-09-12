@@ -9,5 +9,10 @@
     "author": "",
     "license": "ISC",
     "keywords": [],
-    "description": ""
+    "description": "",
+    "devDependencies": {
+        "@eslint/js": "^9.35.0",
+        "eslint": "^9.35.0",
+        "globals": "^16.4.0"
+    }
 }
