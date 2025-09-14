@@ -42,3 +42,16 @@
 // var a = b;
 // // var a → declared inside function scope, so it’s local.
 // b = 5 → since no var/let/const, it implicitly becomes global (in sloppy mode).
+
+// const obj = {
+//     name: "Alice",
+//     regularFn: function () {
+//         console.log("regularFn this.name:", this.name);
+//     },
+//     arrowFn: () => {
+//         console.log("arrowFn this.name:", this.name);
+//     }
+// };
+
+// obj.regularFn(); // ✅ "Alice"
+// obj.arrowFn();   // ❌ undefined (or error in strict mode)

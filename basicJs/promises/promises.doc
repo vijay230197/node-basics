@@ -1,0 +1,11 @@
+new Promise inside logs runs synchronously
+
+.then() -----> Goes to microtask queue
+
+setTimeout -----> macrotask queue
+
+logs
+
+setTimeout → macrotask.
+
+setImmediate → also a macrotask, but runs after timers in Node.js.
