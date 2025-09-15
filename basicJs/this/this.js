@@ -38,7 +38,7 @@
 //undefined
 //number
 
-//b = 5;    // assignment first
+// b = 5;    // assignment first
 // var a = b;
 // // var a → declared inside function scope, so it’s local.
 // b = 5 → since no var/let/const, it implicitly becomes global (in sloppy mode).

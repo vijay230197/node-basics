@@ -73,6 +73,7 @@
 // Z
 // I
 
+//5
 // console.log("alpha");
 
 // process.nextTick(() => console.log("beta"));
@@ -90,7 +91,7 @@
 // gamma
 // delta
 
-
+//6
 // console.log("start");
 
 // const p = new Promise((resolve) => {
@@ -120,6 +121,7 @@
 // immediate in then
 
 
+//7
 // console.log("A");
 
 // process.nextTick(() => console.log("B"));
@@ -135,25 +137,28 @@
 // A E B C D
 
 
+//8
 // async function foo() {
 //     console.log("1");
 //     await null;
 //     console.log("2");
-//   }
-  
-//   console.log("start");
-  
-//   foo();
-  
-//   Promise.resolve().then(() => console.log("3"));
-  
-//   setImmediate(() => console.log("4"));
-  
-//   console.log("end");
+// }
+
+// console.log("start");
+
+// foo();
+
+// Promise.resolve().then(() => console.log("3"));
+
+// setImmediate(() => console.log("4"));
+
+// console.log("end");
 
 //   start 1 end 2 3 4
 
 
+
+//9
 // console.log("X");
 
 // setTimeout(() => console.log("Y"), 0);
@@ -168,28 +173,29 @@
 // X Q Z W Y
 
 
+//10
 // async function bar() {
 //     console.log("alpha");
 //     await Promise.resolve();
 //     console.log("beta");
 //   }
-  
+
 //   console.log("start");
-  
+
 //   process.nextTick(() => console.log("epsilon"));
-  
+
 //   bar();
-  
+
 //   setImmediate(() => console.log("gamma"));
-  
+
 //   setTimeout(() => console.log("delta"), 0);
-  
+
 //   console.log("end");
 
 //   start alpha end epsilon beta delta gamma
 
 
-
+//11
 // console.log("A");
 
 // setTimeout(() => {
@@ -206,25 +212,26 @@
 
 // A F D B C E
 
-
+//12
 // async function task() {
 //     console.log("1");
 //     await null;
 //     console.log("2");
 //     process.nextTick(() => console.log("3"));
 //   }
-  
+
 //   console.log("start");
-  
+
 //   task();
-  
+
 //   setTimeout(() => console.log("4"), 0);
-  
+
 //   console.log("end");
 
 //   start 1 end 2 3 4
 
 
+//13
 // console.log("X");
 
 // setImmediate(() => {
@@ -241,7 +248,7 @@
 
 // X Q W V Y Z
 
-
+//14
 // console.log("alpha");
 
 // setTimeout(() => {
@@ -260,7 +267,7 @@
 
 // alpha gamma zeta epsilon delta beta
 
-
+//15
 // console.log("I");
 
 // Promise.resolve().then(() => {
@@ -281,6 +288,7 @@
 // I VII II III V VI IV
 
 
+//16
 // console.log("A");
 
 // setTimeout(() => {
@@ -297,10 +305,10 @@
 
 // console.log("G");
 
-
 // A D G E F B C
 
 
+//17
 // console.log("start");
 
 // setImmediate(() => {
@@ -319,41 +327,46 @@
 
 // start end E C D A B
 
+
+//18
+
 // async function run() {
 //     console.log("X");
 //     setImmediate(() => console.log("Y"));
 //     await null;
 //     console.log("Z");
-//   }
-  
-//   console.log("Q");
-  
-//   run();
-  
-//   Promise.resolve().then(() => console.log("W"));
-  
-//   setTimeout(() => {
+// }
+
+// console.log("Q");
+
+// run();
+
+// Promise.resolve().then(() => console.log("W"));
+
+// setTimeout(() => {
 //     console.log("T");
 //     process.nextTick(() => console.log("U"));
-//   }, 0);
-  
-//   console.log("R");
+// }, 0);
+
+// console.log("R");
 
 //   Q X R Z W T U Y
 
 
+
+//19
 // console.log("alpha");
 
 // setTimeout(() => {
-//   console.log("beta");
-//   Promise.resolve().then(() => console.log("gamma"));
+//     console.log("beta");
+//     Promise.resolve().then(() => console.log("gamma"));
 // }, 0);
 
 // (async () => {
-//   console.log("delta");
-//   await Promise.resolve();
-//   console.log("epsilon");
-//   setImmediate(() => console.log("zeta"));
+//     console.log("delta");
+//     await Promise.resolve();
+//     console.log("epsilon");
+//     setImmediate(() => console.log("zeta"));
 // })();
 
 // process.nextTick(() => console.log("eta"));
@@ -363,17 +376,18 @@
 // alpha delta theta eta epsilon beta gamma zeta
 
 
+//20
 // console.log("I");
 
 // Promise.resolve().then(() => {
-//   console.log("II");
-//   process.nextTick(() => console.log("III"));
+//     console.log("II");
+//     process.nextTick(() => console.log("III"));
 // }).then(() => {
-//   console.log("IV");
-//   setTimeout(() => {
-//     console.log("V");
-//     setImmediate(() => console.log("VI"));
-//   }, 0);
+//     console.log("IV");
+//     setTimeout(() => {
+//         console.log("V");
+//         setImmediate(() => console.log("VI"));
+//     }, 0);
 // });
 
 // console.log("VII");
@@ -382,13 +396,14 @@
 // I VII II III IV V VI
 
 
+//21
 // console.log("A");
 
 // Promise.resolve().then(() => {
-//   console.log("B");
-//   return Promise.resolve().then(() => console.log("C"));
+//     console.log("B");
+//     return Promise.resolve().then(() => console.log("C"));
 // }).then(() => {
-//   console.log("D");
+//     console.log("D");
 // });
 
 // queueMicrotask(() => console.log("E"));
@@ -398,13 +413,14 @@
 // A F B E C D
 
 
+//22
 // console.log("Start");
 
 // (async () => {
-//   console.log("Inside async");
-//   await null;
-//   console.log("After await");
-//   queueMicrotask(() => console.log("Micro"));
+//     console.log("Inside async");
+//     await null;
+//     console.log("After await");
+//     queueMicrotask(() => console.log("Micro"));
 // })();
 
 // setTimeout(() => console.log("Timeout"), 0);
@@ -416,16 +432,17 @@
 // Start Inside async End After await Promise Micro Timeout
 
 
+//23
 // console.log("X");
 
 // setImmediate(() => {
-//   console.log("Y");
-//   Promise.resolve().then(() => console.log("Z"));
+//     console.log("Y");
+//     Promise.resolve().then(() => console.log("Z"));
 // });
 
 // Promise.resolve().then(() => {
-//   console.log("W");
-//   setTimeout(() => console.log("V"), 0);
+//     console.log("W");
+//     setTimeout(() => console.log("V"), 0);
 // });
 
 // process.nextTick(() => console.log("U"));
@@ -436,14 +453,16 @@
 // X Q U W V Y Z
 
 
+
+//24
 // console.log("alpha");
 
 // Promise.resolve().then(async () => {
-//   console.log("beta");
-//   await null;
-//   console.log("gamma");
+//     console.log("beta");
+//     await null;
+//     console.log("gamma");
 // }).then(() => {
-//   console.log("delta");
+//     console.log("delta");
 // });
 
 // queueMicrotask(() => console.log("epsilon"));
@@ -455,19 +474,20 @@
 // alpha theta beta epsilon gamma delta zeta
 
 
+//25
 // console.log("I");
 
 // setTimeout(() => {
-//   console.log("II");
-//   queueMicrotask(() => console.log("III"));
-//   process.nextTick(() => console.log("IV"));
-//   Promise.resolve().then(() => console.log("V"));
+//     console.log("II");
+//     queueMicrotask(() => console.log("III"));
+//     process.nextTick(() => console.log("IV"));
+//     Promise.resolve().then(() => console.log("V"));
 // }, 0);
 
 // (async () => {
-//   console.log("VI");
-//   await null;
-//   console.log("VII");
+//     console.log("VI");
+//     await null;
+//     console.log("VII");
 // })();
 
 // Promise.resolve().then(() => console.log("VIII"));

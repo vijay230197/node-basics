@@ -1,1 +1,4 @@
 Doesnt work in commonJs
+only works in esm
+
+if needed in commonjs, in package.json change "type": "module"

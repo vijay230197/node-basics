@@ -10,7 +10,7 @@
 // console.log(bar); // ❌ ReferenceError: Cannot access 'bar' before initialization
 // bar();            // ❌ ReferenceError
 
-// var bar = function () {
+// const bar = function () {
 //     console.log("bar called");
 // };
 
