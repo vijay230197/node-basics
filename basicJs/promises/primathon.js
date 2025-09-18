@@ -1,10 +1,11 @@
 function call() {
     return new Promise(resolve => setTimeout(() => {
 
-        // console.log('hi');
 
         resolve()
-    }, 0));
+        console.log('hi');
+
+    }, 10000));
 }
 
 

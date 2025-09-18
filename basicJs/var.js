@@ -24,7 +24,7 @@
 
 // //var allows redeclararions
 
-//4. *****************************************************************************
+// //4. *****************************************************************************
 // console.log(foo); // undefined
 // foo();            // ❌ TypeError: foo is not a function
 
@@ -32,6 +32,17 @@
 //     console.log("foo called");
 // };
 
+
+// //11.
+// console.log(square);
+// var square = function sq(n) {
+//     return n * n;
+// }
+
+// sq(3)
+
+// //undefined
+// //Referrence error: sq is not defined
 
 //5 {IN BROWSER}
 // var v = 100;
@@ -96,6 +107,18 @@
 
 // 2
 // 1
+
+
+//11.
+// var x = 20;
+// function foo(){
+//      console.log(x)
+//      var x = 10
+//      console.log(x)
+// }
+// foo()
+ 
+// undefined 10
 
 
 //10.
