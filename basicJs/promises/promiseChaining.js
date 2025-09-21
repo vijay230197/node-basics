@@ -91,7 +91,7 @@
 // gamma
 // delta
 
-//6
+//6 *
 // console.log("start");
 
 // const p = new Promise((resolve) => {
@@ -137,7 +137,7 @@
 // A E B C D
 
 
-//8
+//8 *
 // async function foo() {
 //     console.log("1");
 //     await null;
@@ -328,7 +328,7 @@
 // start end E C D A B
 
 
-//18
+//18 *
 
 // async function run() {
 //     console.log("X");
@@ -396,7 +396,7 @@
 // I VII II III IV V VI
 
 
-//21
+//21 * 
 // console.log("A");
 
 // Promise.resolve().then(() => {
@@ -413,7 +413,7 @@
 // A F B E C D
 
 
-//22
+//22 ** 
 // console.log("Start");
 
 // (async () => {
@@ -454,7 +454,7 @@
 
 
 
-//24
+//24 **
 // console.log("alpha");
 
 // Promise.resolve().then(async () => {
@@ -474,7 +474,7 @@
 // alpha theta beta epsilon gamma delta zeta
 
 
-//25
+//25 **
 // console.log("I");
 
 // setTimeout(() => {
@@ -538,35 +538,35 @@
 // this is set immediate 3
 
 
-//27.
-// console.log('start');
- 
+//27. **
+// console.log('start'); 
+
 // setTimeout(() => {
-//   console.log('setTimeout');
+//     console.log('setTimeout'); 
 // }, 0);
- 
+
 // setImmediate(() => {
-//   console.log('setImmediate');
+//     console.log('setImmediate'); 
 // });
- 
-// process.nextTick(() => {
-//   console.log('nextTick');
+
+// process.nextTick(() => { 
+//     console.log('nextTick');
 // });
- 
+
 // queueMicrotask(() => {
-//   console.log('queueMicrotask');
+//     console.log('queueMicrotask'); 
 // });
- 
+
 // Promise.resolve().then(() => {
-//   console.log('promiseThen');
+//     console.log('promiseThen'); 
 // });
- 
+
 // (async function () {
-//   await null;
-//   console.log('asyncAwait');
+//     await null;
+//     console.log('asyncAwait'); 
 // })();
- 
-// console.log('end');
+
+// console.log('end'); 
 
 //start
 // end
