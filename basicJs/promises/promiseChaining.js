@@ -95,15 +95,15 @@
 // console.log("start");
 
 // const p = new Promise((resolve) => {
-//   console.log("inside executor");
-//   setImmediate(() => console.log("immediate in executor"));
-//   resolve();
+//     console.log("inside executor");
+//     setImmediate(() => console.log("immediate in executor"));
+//     resolve();
 // });
 
 // p.then(() => {
-//   console.log("inside then");
-//   setTimeout(() => console.log("timeout in then"), 0);
-//   setImmediate(() => console.log("immediate in then"));
+//     console.log("inside then");
+//     setTimeout(() => console.log("timeout in then"), 0);
+//     setImmediate(() => console.log("immediate in then"));
 // });
 
 // setTimeout(() => console.log("outside timeout"), 0);
@@ -474,7 +474,7 @@
 // alpha theta beta epsilon gamma delta zeta
 
 
-//25 **
+//25 *
 // console.log("I");
 
 // setTimeout(() => {
@@ -539,34 +539,34 @@
 
 
 //27. **
-// console.log('start'); 
+// console.log('start');
 
 // setTimeout(() => {
-//     console.log('setTimeout'); 
+//     console.log('setTimeout');
 // }, 0);
 
 // setImmediate(() => {
-//     console.log('setImmediate'); 
+//     console.log('setImmediate');
 // });
 
-// process.nextTick(() => { 
+// process.nextTick(() => {
 //     console.log('nextTick');
 // });
 
 // queueMicrotask(() => {
-//     console.log('queueMicrotask'); 
+//     console.log('queueMicrotask');
 // });
 
 // Promise.resolve().then(() => {
-//     console.log('promiseThen'); 
+//     console.log('promiseThen');
 // });
 
 // (async function () {
 //     await null;
-//     console.log('asyncAwait'); 
+//     console.log('asyncAwait');
 // })();
 
-// console.log('end'); 
+// console.log('end');
 
 //start
 // end
@@ -576,3 +576,18 @@
 // asyncAwait
 // setTimeout
 // setImmediate
+
+//28.
+// console.log('1');
+
+// process.nextTick(() => console.log('3'));
+
+// Promise.resolve().then(() => console.log('2'));
+
+// setImmediate(() => console.log('4'));
+
+// setTimeout(() => console.log('5'), 0);
+
+// console.log('6')
+
+// // 1 6 3 2 5 4
