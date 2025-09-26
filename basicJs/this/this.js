@@ -55,3 +55,15 @@
 
 // obj.regularFn(); // ✅ "Alice"
 // obj.arrowFn();   // ❌ undefined (or error in strict mode)
+
+
+// //4
+// const obj = {
+//     value: 42,
+//     getValue: (() => {
+//         return this.value;
+//     })
+// };
+// console.log(obj.getValue());
+
+// //undefined
